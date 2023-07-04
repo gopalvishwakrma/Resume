@@ -53,6 +53,7 @@
             text-align: center;
             gap: 20px;
             word-spacing: 5px;
+            box-shadow: 2px 2px 5px #1a1718;
         }
 
         .statement,
@@ -74,11 +75,41 @@
             padding-left: 4vw;
         }
 
+        .interest {
+            margin-bottom: 5vh !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
         @media screen and (max-width: 479px) {
+            html {
+                word-spacing: 0.2rem;
+            }
+
             .contact {
                 display: block;
                 word-spacing: 4px;
             }
+
+            .statement,
+            .eduaction,
+            .skills,
+            .personalwebsite,
+            .language,
+            .interest {
+                padding-left: 3vw;
+            }
+
+            .eduaction ul,
+            .skills ul,
+            .personalwebsite ul,
+            .language ul,
+            .interest ul {
+                padding-left: 5vw;
+            }
+
         }
     </style>
 </head>
@@ -90,11 +121,11 @@
     </div>
 
     <div class="contact">
-        <p> Email: <a href="vishwakarmagopalcs222343@gmail.com">vishwakarmagopalcs222343@gmail.com</a></p>
-        Phone: <a href="8928578161">+91 8928578161</a><br>
+        <p>Email: <a href="mailto:vishwakarmagopalcs222343@gmail.com">vishwakarmagopalcs222343@gmail.com</a></p>
+        Phone: <a href="tel:+918928578161">+91 8928578161</a><br>
         Location: Andheri (East), Mumbai, MH
-        </p>
     </div>
+
 
     <div class="statement">
         <h3>Personal Statement</h3>
@@ -130,10 +161,11 @@
         <h3>Personal Website</h3>
         <ul style="list-style-type: disc;">
             <p><Strong>Links: </Strong></p>
-            <ul style="list-style-type: lower-roman;">
-                <a
-                    href="https://gopalvishwakrma.github.io/modern-website/">https://gopalvishwakrma.github.io/modern-website/</a><br><br>
-                <a href="https://gopalvishwakrma.github.io/testing/">https://gopalvishwakrma.github.io/testing/</a>
+            <ul class="projects">
+                <a href="https://gopalvishwakrma.github.io/modern-website/"
+                    style="text-decoration: disc;">https://gopalvishwakrma.github.io/modern-website/</a><br><br>
+                <a href="https://gopalvishwakrma.github.io/testing/"
+                    style="text-decoration: disc;">https://gopalvishwakrma.github.io/testing/</a>
             </ul><br>
             <li>Designed and developed a personal portfolio website using HTML, CSS, and
                 JavaScrip</li>
